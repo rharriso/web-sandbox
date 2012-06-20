@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script type="text/javascript">
+			var worker = new Worker("imageWorkerEncodeLocally.js");
+			worker.onmessage = function(event) {
+				var img = new Image();
+				img.src = event.data;
+				document.body.appendChild(img);
+			};
+			worker.postMessage("http://maps.google.com/cbk?output=tile&panoid=pxRRW1MT3RcLx1Ugas9J7w&zoom=3&x=3&y=0&1339047363182");
+		</script>
+		<title>image worker</title>
+	</head>
+	<body>
+		
+	</body>
+</html>

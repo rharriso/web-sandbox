@@ -1,0 +1,38 @@
+html, body{
+	margin: 0;
+	background-color: #01243B;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #9D9B86;
+}
+
+h1 {
+	width: 700px;
+	margin: 0.5em auto 1em auto;
+}
+
+a {
+	color: #5288DB;
+}
+
+ul, li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+p{
+	background-color: #ECC87A;
+}
+
+div.wrapper{
+	color: #0F0F0F;
+	background-color: #DCCCAA;
+	width: 700px;
+	border-radius: 20px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.completed{
+	text-decoration: line-through;
+}
