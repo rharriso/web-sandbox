@@ -11,8 +11,8 @@
         <ul>
         	<li>
         		<a href="backboneToDo">Backbone To Do List</a><br/>
-        		<a href="imageWithWorker/index.html">Image Worker</a><br/>
-			<a href="turingMachine/index.html">Turing Machine</a>
+        		<a href="imageWithWorker/index.html">Image Worker</a>
+			<a href="turingMachine/index.html">Image Worker</a>
         	</li>
         </ul>
     </body>
