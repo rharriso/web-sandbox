@@ -4,11 +4,25 @@
 		<script type="text/javascript">
 			var worker = new Worker("imageWorkerEncodeLocally.js");
 			worker.onmessage = function(event) {
-				var img = new Image();
-				img.src = event.data;
-				document.body.appendChild(img);
+
+				var resp = JSON.parse(event.data);
+
+				console.log(resp.status+" "+resp.requestURL);
+
+				//iff success put image in page
+				if(resp.status === 200){
+					var img = new Image();
+					img.src = resp.content;
+					document.body.appendChild(img);	
+					
+				}else{
+					console.log(resp.content);	
+				}
 			};
-			worker.postMessage("http://maps.google.com/cbk?output=tile&panoid=pxRRW1MT3RcLx1Ugas9J7w&zoom=3&x=3&y=0&1339047363182");
+			worker.postMessage("power_station_mech.jpg");
+			worker.postMessage("fakeImage.barf");
+			worker.postMessage("sonic.gif");
+			worker.postMessage("dice.png");
 		</script>
 		<title>image worker</title>
 	</head>

@@ -1,0 +1,330 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"onMouse",
+				"onMouseUp"
+			],
+			[
+				"onMou",
+				"onMouseDown"
+			],
+			[
+				"store",
+				"storedPosition"
+			],
+			[
+				"getCu",
+				"getCurrUser"
+			],
+			[
+				"User",
+				"UserManager"
+			],
+			[
+				"curr",
+				"currUser"
+			],
+			[
+				"currPo",
+				"currPosition"
+			],
+			[
+				"re",
+				"removeItem"
+			],
+			[
+				"loca",
+				"localStorage"
+			],
+			[
+				"new",
+				"newPov"
+			],
+			[
+				"is",
+				"isNaN"
+			],
+			[
+				"art",
+				"artifactNode"
+			],
+			[
+				"setPo",
+				"setPov"
+			],
+			[
+				"set",
+				"setPosition"
+			],
+			[
+				"user",
+				"userJSON"
+			],
+			[
+				"Posi",
+				"PositionManager"
+			],
+			[
+				"posi",
+				"position"
+			],
+			[
+				"storePo",
+				"storedPov"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"stored",
+				"storedPosition"
+			],
+			[
+				"posit",
+				"PositionManager"
+			],
+			[
+				"login",
+				"loginViewContainer"
+			],
+			[
+				"arti",
+				"artifact"
+			],
+			[
+				"de",
+				"detail"
+			],
+			[
+				"show",
+				"showViewDetail"
+			],
+			[
+				"all",
+				"allLocations"
+			],
+			[
+				"fun",
+				"Function"
+			],
+			[
+				"can",
+				"cancelPlace"
+			],
+			[
+				"Art",
+				"artifactOverlay"
+			],
+			[
+				"pro",
+				"prototype"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/rharriso/Sites/verse-web-client/_src/data/User.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/PositionManager.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewer/Nodes/WebGLController.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewer/controls/FirstPersonControls.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/data/UserManager.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/MasterController.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewControllers/UserViewController/UserViewController.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewer/ViewerController.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewer/MapViewController.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewControllers/UserViewController/jquery.userViewController.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewer/Nodes/ArtifactNode.js",
+		"/Users/rharriso/Sites/verse-web-client/index.php",
+		"/Users/rharriso/Sites/verse-web-client/_view_controller_header.php",
+		"/Users/rharriso/Sites/verse-web-client/_content/loginView.php",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewControllers/UserViewController/UserViewController.css",
+		"/Users/rharriso/Sites/verse-web-client/_src/VerseRouter.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/data/Artifact.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewControllers/LeftControls/SearchView/SearchVRSEList.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewControllers/ListViewController/ListViewController.css",
+		"/Users/rharriso/Sites/verse-web-client/_css/lists.css",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewControllers/ListViewController/ArtifactThumbList/ArtifactThumbListController.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewControllers/ListViewController/ArtifactThumbList/ArtifactThumbListItem.html",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewControllers/ListViewController/ArtifactThumbList/ArtifactListItem.html",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewControllers/ListViewController/LocationList/LocationListController.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewControllers/ListViewController/LocationList/LocationListItem.html",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewer/controls/ArtifactOverlay.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewer/controls/ArtifactOverlay.html",
+		"/Users/rharriso/Sites/verse-web-client/_src/data/Location.js",
+		"/Users/rharriso/Library/Application Support/Sublime Text 2/Packages/User/JavaScript.sublime-settings",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewControllers/RightMenu/LocationSubMenu/LocationSubMenuController.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/libs/Backbone.CollectionSet.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewControllers/LeftControls/SearchView/SearchView.html",
+		"/Users/rharriso/Sites/verse-web-client/_default_header.php",
+		"/Users/rharriso/Sites/verse-web-client/_src/data/Verse.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/data/Floorplan.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewer/controls/PlacerControls.js",
+		"/Users/rharriso/Sites/verse-web-client/_css/artifactDetail.css",
+		"/Users/rharriso/Sites/verse-web-client/_css/base.css",
+		"/Users/rharriso/Sites/verse-web-client/_viewer_header.php",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewer/controls/placementControls.php",
+		"/Users/rharriso/Sites/verse-web-client/_src/libs/Three.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewControllers/LeftControls/LeftControls.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewControllers/LeftControls/LeftControls.css",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewControllers/LeftControls/FloorplanViewController/FloorplanViewController.js",
+		"/Users/rharriso/Sites/verse-web-client/_src/viewer/ViewerEvent.js",
+		"/Users/rharriso/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"VERSE.UserManager.storeCurrUser();",
+			"home",
+			"home_point\n\n",
+			"this.position",
+			"stringify",
+			"login",
+			"onPositionGathered",
+			"setLocation",
+			"jquery.",
+			"<a ",
+			"allAr",
+			"this.hide",
+			"overlay",
+			"place",
+			"calll",
+			"methods",
+			"\n\nmethods",
+			"methods"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"this.close"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.475064021675,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 236.0,
+	"status_bar_visible": true
+}
