@@ -1,0 +1,79 @@
+body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	overflow: hidden;
+}
+
+#grid{
+	position: absolute;
+	top: 0px;
+	left: 0px;				
+	width: 100%;
+	min-height: 100%;								
+	z-index: 0;
+}
+
+.block{								
+	position: absolute;				
+}
+
+.oneSquare{
+	background-color: #0099FF;
+	height: 40px;
+	width: 40px;
+}
+
+.threeXone{
+	background-color: #0099FF;
+	height: 40px;
+	width: 140px;
+}
+
+.oneXthree{
+	background-color: #800080;
+	height: 140px;
+	width: 40px;				
+}
+
+.fourSquare{
+	background-color: #0FF000;
+	height: 90px;
+	width: 90px;
+}
+
+.defaultShape{
+	background-color: #FF0000;
+	height: 40px;
+	width: 40px;
+}
+
+.threeXtwo{
+	background-color: orange;
+	height: 90px;
+	width: 140px;
+}
+
+.twoXthree{
+	background-color: brown;
+	height: 140px;
+	width: 90px;				
+}
+
+#logo{
+	font-size: 150px;
+	height: 250px;
+	font-family: "Abadi MT Condensed Extra Bold", "Arial", sans-serif;
+	font-weight: bold; 
+	line-height: 250px;
+	color: yellow;
+	position: absolute;
+	top: 10%;
+	width: 100%;
+	z-index: 10;
+	text-align: center;				
+	text-shadow: 0.1em 0.1em rgba(0,0,0,0.75);
+}
+#logo span{
+	vertical-align: middle;
+}

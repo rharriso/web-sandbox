@@ -1,0 +1,227 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	background: black;
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	-webkit-perspective: 1000px;
+}
+
+div{-webkit-transform-style: preserve-3d;}
+
+#view_port{
+	top: 0px;
+	left: 0px;
+	height: 3259px;
+	width: 1973px;
+	-webkit-transform: translateY(-1500px) translateZ(-1500px);
+	-webkit-transform-origin: 50% 50%;
+	z-index: 1;
+	position: absolute;
+}
+
+#instructions{
+	z-index: 2;
+	position: absolute;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding 10px;
+	border: 3px solid white;
+}
+
+#table{
+	height: 3259px;
+	width: 1973px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#table div{
+	position: absolute;
+}
+
+#map{
+	height: 3058px;
+	width: 1772px;
+	top: 100px;
+	left: 100px;
+	-webkit-transform: translateZ(1px);
+	background: url("../_imgs/diceOfThrones/westeros.jpg");
+}
+
+div.table{
+	background: url("../_imgs/diceOfThrones/wood_swatch.jpg") top left repeat;
+	border: 1px solid black;
+}
+
+#table_top{
+	height: 3258px;
+	width: 1972px;
+	border-top: 1px solid black;
+}
+
+#table_front{
+	width: 1972px;
+	height: 100px;	
+	-webkit-transform: rotateX(90deg);
+	-webkit-transform-origin: 100% 100%;
+	bottom: 0;
+	left: 0;
+}
+
+#table_back{
+	width: 1972px;
+	height: 100px;
+	-webkit-transform: rotateX(-90deg);
+	-webkit-transform-origin: 0 0;
+	top:0;
+	left: 0;
+}
+
+#table_left{
+	height: 3259px;
+	width: 100px;
+	-webkit-transform: rotateY(90deg);
+	-webkit-transform-origin: 0 0;
+	top:0;
+	left: 0;
+}
+
+#table_right{
+	height: 3259px;
+	width: 100px;
+	-webkit-transform: rotateY(-90deg);
+	-webkit-transform-origin: 100% 100%;
+	top: 0;	
+	right:0;
+}
+div.table.leg{
+	position absolute;
+	height: 50px;
+	width: 50px;
+}
+div.table.leg.tl{
+	top: 0;
+	left:0;
+}
+div.table.leg.tr{
+	top: 0;
+	right:0;
+}
+div.table.leg.br{
+	bottom:0;
+	right:0;
+}
+div.table.leg.bl{
+	bottom: 0;
+	left: 0;
+}
+
+div.table.leg div{
+	position: absolute;
+}
+div.table.leg div.left{
+	height: 100%;
+	width: 500px;
+	right: 50px;
+	top: 0;
+	-webkit-transform-origin: 100% 0;
+	-webkit-transform: rotateY(-90deg);
+}
+div.table.leg div.right{
+	height: 100%;
+	width: 500px;
+	left: 50px;
+	top: 0;
+	-webkit-transform-origin: 0 0;
+	-webkit-transform: rotateY(90deg);
+}
+div.table.leg div.bottom{
+	width: 50px;
+	height: 500px;
+	top: 50px;
+	left: 0;
+	-webkit-transform-origin: 0 0;
+	-webkit-transform: rotateX(-90deg);
+}
+div.table.leg div.top{
+	width: 50px;
+	height: 500px;
+	bottom: 100%;
+	left: 0;
+	-webkit-transform-origin: 0 100%;
+	-webkit-transform: rotateX(90deg);
+}
+
+#dice_wrapper{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	height: 400px;
+	width: 400px;
+	-webkit-transform-origin: 200px 200px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform: scaleX(0.3) scaleY(0.3) scaleZ(0.3) translateZ(335px);
+}
+
+#dice_tilt{
+	position: absolute;
+	height: 400px;
+	width: 400px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 200px 200px;
+	-webkit-transform: rotateY(15deg);
+}
+
+#dice{
+	position: relative;
+	height: 400px;
+	width: 400px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform-origin: 200px 200px;
+	-webkit-transform: rotateX(45deg) rotateY(45deg);
+}
+
+#dice div{
+	height: 400px;
+	width: 400px;
+	position: absolute;
+	top:0;
+	left: 0;
+	opacity: 0.85;
+	border-radius: 30px;
+}
+/* die faces */
+#stark{
+	background-image: url("../_imgs/diceOfThrones/stark.jpg");
+	-webkit-transform: translateZ(200px);
+}
+#targaryen{
+	background-image: url("../_imgs/diceOfThrones/targaryen.jpg");
+	-webkit-transform: rotateY(90deg) translateZ(200px);
+}
+#baratheon{
+	background-image: url("../_imgs/diceOfThrones/baratheon.jpg");
+	-webkit-transform: rotateY(-90deg) translateZ(200px);
+}
+#lannister{
+	background-image: url("../_imgs/diceOfThrones/lannister.jpg");
+	-webkit-transform: rotateY(180deg) translateZ(200px);
+}
+#tully{
+	background-image: url("../_imgs/diceOfThrones/tully.jpg");
+	-webkit-transform: rotateX(-90deg) translateZ(200px);
+}
+#arryn{
+	background-image: url("../_imgs/diceOfThrones/arryn.jpg");
+	-webkit-transform: rotateX(90deg) translateZ(200px);
+}

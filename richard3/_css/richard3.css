@@ -1,0 +1,19 @@
+body, *{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#scene{
+	width: 670px;
+	height: 900px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+#scene .frame{
+	position: absolute;
+	top: -150px;
+	left: -50px;
+}

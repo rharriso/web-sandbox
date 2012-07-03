@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="_css/diceOfThrones.css" type="text/css"/>
+		
+		<script type="text/javascript" src="_js/sylvester.js"></script>
+		<script type="text/javascript" src="_js/Sprite3D.js"></script>
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-21439702-3']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();		
+		</script>
+		<title>Dice of Thrones</title>
+	</head>
+	<body>
+		<fieldset id="instructions">
+			<legend>Insctructions</legend>
+			a,d &mdash; translate table along x-axis<br/>
+			w,s &mdash; translate table along y-axis<br/>
+			q,e &mdash; translate table along z-axis<br/>
+			
+			leftArrow, rightArrow &mdash; rotate z-axis<br/>
+			upArrow, downArrow &mdash; rotate x-axis
+		</fieldset>
+		<div id="view_port">
+			<div id="cameraX">
+			<div id="cameraZ">
+				<div id="table">
+					<!-- Table Parts -->
+					<!-- Table Top -->
+					<div id="table_top" class="table"></div>
+					<div id="table_front" class="table"></div>
+					<div id="table_back" class="table"></div>
+					<div id="table_left" class="table"></div>
+					<div id="table_right" class="table"></div>
+					
+					<!--	Table legs	-->
+					<div class="table leg tl">
+						<div class="table top"></div>
+						<div class="table right"></div>
+						<div class="table bottom"></div>
+						<div class="table left"></div>
+					</div>
+					<div class="table leg bl">
+						<div class="table top"></div>
+						<div class="table right"></div>
+						<div class="table bottom"></div>
+						<div class="table left"></div>
+					</div>
+					<div class="table leg tr">
+						<div class="table top"></div>
+						<div class="table right"></div>
+						<div class="table bottom"></div>
+						<div class="table left"></div>
+					</div>
+					<div class="table leg br">
+						<div class="table top"></div>
+						<div class="table right"></div>
+						<div class="table bottom"></div>
+						<div class="table left"></div>
+					</div>
+					
+					<div id="map"></div>
+				
+					<!--	Dice of Table	-->
+					<div id="dice_wrapper">
+						<div id="dice_tilt">
+							<div id="dice">
+								<div id="targaryen"></div>
+								<div id="baratheon"></div>
+								<div id="tully"></div>
+								<div id="arryn"></div>
+								<div id="lannister"></div>
+								<div id="stark"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	
+		<script type="text/javascript">
+			var timeStep	= 0, 
+			offsetX = 0, offsetY = -1500, offsetZ = -1800, rotX = 0, rotZ = 0,
+			
+			diceWrapper	= new Sprite3D(document.getElementById("dice_wrapper")),
+			diceTilt	= new Sprite3D(document.getElementById("dice_tilt"));
+			view_port	= new Sprite3D(document.getElementById("view_port"));
+			cameraX		= new Sprite3D(document.getElementById("cameraX"));
+			cameraZ		= new Sprite3D(document.getElementById("cameraZ"));
+			
+			var halfWHeight = window.innerHeight/2,
+			halfWWidth = window.innerWidth/2,
+			halfVHeight = view_port.elem.clientHeight/2,
+			halfVWidth = view_port.elem.clientWidth/2;
+						
+			diceWrapper.scale(0.3);
+			
+			var onInterval = setInterval(function(){
+				timeStep		= timeStep+4;
+				
+				//update dice spin
+				diceTilt.setRotate(0, 0, (timeStep<<2));
+				diceTilt.refreshTransform();
+				diceWrapper.setRotate(timeStep);
+				diceWrapper.refreshTransform();
+							
+				//update viewPort
+				switch(keyCode){
+					case 37: //left
+						rotZ-=1;
+						break;
+					case 38: //up
+						rotX+=1;
+						break;
+					case 39: //right
+						rotZ+=1;
+						break;
+					case 40: //down
+						rotX-=1;
+						break;
+					case 65: //a
+						offsetX+=10;
+						break;
+					case 68: //d
+						offsetX-=10;
+						break;
+					case 87: //w
+						offsetY+=10;
+						break;
+					case 83: //s
+						offsetY-=10;
+						break;
+					case 81: //q
+						offsetZ-=10;
+						break;
+					case 69: //e
+						offsetZ+=10;
+						break;
+					default:
+						return;					
+				}
+				
+				view_port.setTranslate(offsetX, offsetY, offsetZ);
+				view_port.refreshTransform();
+				
+				cameraX.setRotate(-rotX, 0, 0);
+				cameraX.setTransformOrigin(-offsetX, -offsetY, -offsetZ);
+				cameraX.refreshTransform();
+				
+				cameraZ.setRotate(0, 0, rotZ);
+				cameraZ.setTransformOrigin(-offsetX, -offsetY, -offsetZ);
+				cameraZ.refreshTransform();
+							
+			}, 32);
+			
+			var keyCode = 0;
+			document.addEventListener("keydown", function(e){
+				keyCode = e.keyCode;
+			});
+			document.addEventListener("keyup", function(){
+				keyCode = 0;
+			});		
+		</script>
+	</body>
+</html>

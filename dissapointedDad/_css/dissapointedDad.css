@@ -1,0 +1,26 @@
+body, *{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#sceneWrapper{
+	margin: 20px auto;
+	height: 800px;
+	width: 1000px;	
+}
+#scene{
+	width: 750px;
+	height: 1000px;
+	box-shadow: 5px 5px 10px rgba(0,0,0, 0.75);
+	margin: -350px auto;
+	position: relative;
+	overflow: hidden;
+	vertical-align: bottom;
+}
+
+#scene .frame{
+	position: absolute;
+	top: -150px;
+	left: -50px;
+}
